@@ -9,6 +9,6 @@ jobs:
       - setup_remote_docker
       - run: |
           docker build -t shannonzhang/lbsfbs .
-          docker login -u="$shannonzhang" -p="$gibsongirl55"
+          docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
           docker push shannonzhang/lbsfbs
 
